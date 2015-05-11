@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Video-js-for-wordpress by stopspazzing</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Video-js-for-wordpress</h1>
+        <h2>The Video.js HTML5 video player library in plugin form for WordPress</h2>
+        <a href="https://github.com/stopspazzing/video-js-for-wordpress" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="videojs---html5-video-player-for-wordpress" class="anchor" href="#videojs---html5-video-player-for-wordpress" aria-hidden="true"><span class="octicon octicon-link"></span></a>Video.js - HTML5 Video Player for Wordpress</h1>
+
+<p>Contributors: nosecreek, Steve Heffernan, schnere, stopspazzing<br>
+Donate link: <a href="http://ncrk.ca/videojs">http://ncrk.ca/videojs</a><br>
+Tags: html5, video, player, javascript<br>
+Requires at least: 2.7<br>
+Tested up to: 4.2.2<br>
+Stable tag: 4.6.0<br>
+License: LGPLv3<br>
+License URI: <a href="http://www.gnu.org/licenses/lgpl-3.0.html">http://www.gnu.org/licenses/lgpl-3.0.html</a>  </p>
+
+<p>Self-hosted responsive HTML5 video for WordPress, built on the widely used Video.js HTML5 video player. Embed video in your post or page using HTML5.</p>
+
+<h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h2>
+
+<p>A video plugin for WordPress built on the Video.js HTML5 video player library. Allows you to embed video in your post or page using HTML5 with Flash fallback support for non-HTML5 browsers.</p>
+
+<p>View <a href="http://videojs.com">videojs.com</a> for additional information.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>This section describes how to install the plugin and get it working.</p>
+
+<ol>
+<li>Upload the <code>videojs-html5-video-player-for-wordpress</code> folder to the <code>/wp-content/plugins/</code> directory</li>
+<li>Activate the plugin through the 'Plugins' menu in WordPress</li>
+<li>Use the [videojs] shortcode in your post or page using the following options.</li>
+</ol>
+
+<h2>
+<a id="video-shortcode-options" class="anchor" href="#video-shortcode-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Video Shortcode Options</h2>
+
+<hr>
+
+<h3>
+<a id="mp4" class="anchor" href="#mp4" aria-hidden="true"><span class="octicon octicon-link"></span></a>mp4</h3>
+
+<p>The location of the h.264/MP4 source for the video.</p>
+
+<pre><code>[videojs mp4="http://video-js.zencoder.com/oceans-clip.mp4"]
+</code></pre>
+
+<h3>
+<a id="ogg" class="anchor" href="#ogg" aria-hidden="true"><span class="octicon octicon-link"></span></a>ogg</h3>
+
+<p>The location of the Theora/Ogg source for the video.</p>
+
+<pre><code>[videojs ogg="http://video-js.zencoder.com/oceans-clip.ogg"]
+</code></pre>
+
+<h3>
+<a id="webm" class="anchor" href="#webm" aria-hidden="true"><span class="octicon octicon-link"></span></a>webm</h3>
+
+<p>The location of the VP8/WebM source for the video.</p>
+
+<pre><code>[videojs webm="http://video-js.zencoder.com/oceans-clip.webm"]
+</code></pre>
+
+<h3>
+<a id="youtube" class="anchor" href="#youtube" aria-hidden="true"><span class="octicon octicon-link"></span></a>youtube</h3>
+
+<p>The location of the YouTube source for the video.</p>
+
+<pre><code>[videojs youtube="http://www.youtube.com/watch?v=DJU6ppZAaec"]
+</code></pre>
+
+<h3>
+<a id="poster" class="anchor" href="#poster" aria-hidden="true"><span class="octicon octicon-link"></span></a>poster</h3>
+
+<p>The location of the poster frame for the video.</p>
+
+<pre><code>[videojs poster="http://video-js.zencoder.com/oceans-clip.png"]
+</code></pre>
+
+<h3>
+<a id="width" class="anchor" href="#width" aria-hidden="true"><span class="octicon octicon-link"></span></a>width</h3>
+
+<p>The width of the video.</p>
+
+<pre><code>[videojs width="640"]
+</code></pre>
+
+<h3>
+<a id="height" class="anchor" href="#height" aria-hidden="true"><span class="octicon octicon-link"></span></a>height</h3>
+
+<p>The height of the video.</p>
+
+<pre><code>[videojs height="264"]
+</code></pre>
+
+<h3>
+<a id="preload" class="anchor" href="#preload" aria-hidden="true"><span class="octicon octicon-link"></span></a>preload</h3>
+
+<p>Start loading the video as soon as possible, before the user clicks play.
+Use 'auto', 'metadata', or 'none'. Auto will preload when the browser or device allows it. Metadata will load only the meta data of the video.</p>
+
+<pre><code>[videojs preload="auto"]
+</code></pre>
+
+<h3>
+<a id="autoplay" class="anchor" href="#autoplay" aria-hidden="true"><span class="octicon octicon-link"></span></a>autoplay</h3>
+
+<p>Start playing the video as soon as it's ready. Use 'true' or 'false'.</p>
+
+<pre><code>[videojs autoplay="true"]
+</code></pre>
+
+<h3>
+<a id="loop" class="anchor" href="#loop" aria-hidden="true"><span class="octicon octicon-link"></span></a>loop</h3>
+
+<p>Causes the video to start over as soon as it ends. Use 'true' or 'false'.</p>
+
+<pre><code>[videojs loop="true"]
+</code></pre>
+
+<h3>
+<a id="controls" class="anchor" href="#controls" aria-hidden="true"><span class="octicon octicon-link"></span></a>controls</h3>
+
+<p>Use 'false' to hide the player controls.</p>
+
+<pre><code>[videojs controls="false"]
+</code></pre>
+
+<h3>
+<a id="muted" class="anchor" href="#muted" aria-hidden="true"><span class="octicon octicon-link"></span></a>muted</h3>
+
+<p>Use 'true' to initially mute video.</p>
+
+<pre><code>[videojs muted="true"]
+</code></pre>
+
+<h3>
+<a id="id" class="anchor" href="#id" aria-hidden="true"><span class="octicon octicon-link"></span></a>id</h3>
+
+<p>Add a custom ID to your video player.</p>
+
+<pre><code>[videojs id="movie-id"]
+</code></pre>
+
+<h3>
+<a id="class" class="anchor" href="#class" aria-hidden="true"><span class="octicon octicon-link"></span></a>class</h3>
+
+<p>Add a custom class to your player. Use full for floating the video player using 'alignleft' or 'alignright'.</p>
+
+<pre><code>[videojs class="alignright"]
+</code></pre>
+
+<h3>
+<a id="tracks" class="anchor" href="#tracks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tracks</h3>
+
+<p>Text Tracks are a function of HTML5 video for providing time triggered text to the viewer. To use tracks use the [track] shortcode inside of the [video] shortcode. You can set values for the kind, src, srclang, label, and default attributes. More information is available in the <a href="http://videojs.com/docs/tracks/">Video.js Documentation</a>.</p>
+
+<pre><code>[videojs][track kind="captions" src="http://video-js.zencoder.com/oceans-captions.vtt" srclang="en" label="English" default="true"][/videojs]
+</code></pre>
+
+<h3>
+<a id="all-attributes-example" class="anchor" href="#all-attributes-example" aria-hidden="true"><span class="octicon octicon-link"></span></a>All Attributes Example</h3>
+
+<pre><code>[videojs mp4="http://video-js.zencoder.com/oceans-clip.mp4" ogg="http://video-js.zencoder.com/oceans-clip.ogg" webm="http://video-js.zencoder.com/oceans-clip.webm" poster="http://video-js.zencoder.com/oceans-clip.png" preload="auto" autoplay="true" width="640" height="264" id="movie-id" class="alignleft" controls="false" muted="true"][track kind="captions" src="http://example.com/path/to/captions.vtt" srclang="en" label="English" default="true"][/videojs]
+</code></pre>
+
+<h3>
+<a id="video-resolution-selector" class="anchor" href="#video-resolution-selector" aria-hidden="true"><span class="octicon octicon-link"></span></a>Video Resolution Selector</h3>
+
+<p>Allows you to use multiple video resolution sources, currently for mp4's only tho should work for anything.</p>
+
+<pre><code>[videojs mp4="http://video-js.zencoder.com/oceans-clip.mp4" mp42="http://video-js.zencoder.com/oceans-clip.mp4" mp43="http://video-js.zencoder.com/oceans-clip.mp4" data-res="360" data-res2="720" data-res3="1080"]
+</code></pre>
+
+<h2>
+<a id="videojs-settings-screen" class="anchor" href="#videojs-settings-screen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Video.js Settings Screen</h2>
+
+<hr>
+
+<p>The values set here will be the default values for all videos, unless you specify differently in the shortcode. Uncheck "Use CDN hosted version?" if you want to use a self-hosted copy of Video.js instead of the CDN hosted version. <em>Using the CDN hosted version is preferable in most situations.</em></p>
+
+<p>If you are using a responsive WordPress theme, you may want to check the <em>Responsive Video</em> checkbox.</p>
+
+<p>Uncheck the <em>Use the [video] shortcode?</em> option <strong>only</strong> if you are using WordPress 3.6+ and wish to use the [video] tag for MediaElement.js. You will still be able to use the [videojs] tag to embed videos using Video.js.</p>
+
+<p>== Changelog ==</p>
+
+<p>= 4.6.0 =</p>
+
+<ul>
+<li>Updated to use Video.js 4.12.6</li>
+<li>Added Video Resolution Selector plugin</li>
+<li>Added option to force mobile custom controls</li>
+</ul>
+
+<p>= 4.5.0 =</p>
+
+<ul>
+<li>Updated to use Video.js 4.5</li>
+<li>Various fixes for YouTube videos</li>
+<li>Changed the way js/css is loaded to allow use of do_shortcode()</li>
+<li>Added Muted option</li>
+</ul>
+
+<p>= 4.3.1 =</p>
+
+<ul>
+<li>Fixed a bug with YouTube videos</li>
+</ul>
+
+<p>= 4.3.0 =</p>
+
+<ul>
+<li>Updated to use Video.js 4.3</li>
+<li>Added YouTube plugin for video.js</li>
+<li>Added option to select YouTube video source</li>
+</ul>
+
+<p>= 4.2.0 =</p>
+
+<ul>
+<li>Changed Video.js version to 4.2</li>
+<li>Removed IE6 support for responsive sites, allowing the removal of black bars from the top/bottom of videos</li>
+<li>Only loads plugin javascript/css on pages where the shortcode is use (Wordpress 3.6+)</li>
+</ul>
+
+<p>= 4.0.0 =</p>
+
+<ul>
+<li>Updated to use Video.js 4. This is a major update to Video.js so please test this plugin with your site before using it in production. A description of changes in the new version is available at <a href="http://blog.videojs.com/post/50021214078/video-js-4-0-now-available">http://blog.videojs.com/post/50021214078/video-js-4-0-now-available</a>.</li>
+<li>Added custom color options to the admin page to allow for easy styling of the player.</li>
+<li>Added a default aspect ratio for responsive videos (16:9).</li>
+<li>Changed the default shortcode to <a href="for%20better%20compatibility%20with%20future%20WordPress%20versions">videojs</a>.</li>
+</ul>
+
+<p>= 3.2.3 =</p>
+
+<ul>
+<li>Added a shortcode generator to the tinymce editor</li>
+<li>Added "Using Video.js" section and contextual help to admin screen</li>
+<li>New "Responsive Video" option for sites with a responsive layout</li>
+<li>Enqueue scripts and styles</li>
+</ul>
+
+<p>= 3.2.2 =</p>
+
+<ul>
+<li>Fixed preload="none".</li>
+</ul>
+
+<p>= 3.2.1 =</p>
+
+<ul>
+<li>Added support for tracks.</li>
+<li>Added loop support.</li>
+<li>Added the ability to disable controls.</li>
+<li>Fixed a bug with the autoplay attribute.</li>
+<li>Fixed mixed-content warnings on SSL pages.</li>
+<li>Added a license to the plugin folder (LGPLv3).</li>
+</ul>
+
+<p>= 3.2.0 =</p>
+
+<ul>
+<li>Fixed a bug with the self-hosted option.</li>
+<li>Updated self-hosted files to Video.js 3.2.0.</li>
+</ul>
+
+<p>= 3.0.1 =</p>
+
+<ul>
+<li>Added an options page to set default values for you video players.</li>
+<li>Added an option to use a self-hosted version of the script instead of the CDN hosted version.</li>
+<li>Added a new class="" option to the shortcode.</li>
+<li>Minor bug fixes.</li>
+</ul>
+
+<p>= 3.0 =</p>
+
+<ul>
+<li>Completely re-worked for Video.js 3.0, which uses a CDN to host the script and the same HTML/CSS skin and JavaScript API for HTML5 and Flash Video.</li>
+<li>See videojs.com for specific changes to the script.</li>
+<li>Removed files used by old versions of Video.js.</li>
+</ul>
+
+<p>= 2.0.2 = </p>
+
+<ul>
+<li>Upgraded to version 2.0.2 of VideoJS. See videojs.com for specific version updates.</li>
+</ul>
+
+<p>= 1.1.3 = </p>
+
+<ul>
+<li>Added poster to Flash fallback</li>
+</ul>
+
+<p>= 1.1.2 = </p>
+
+<ul>
+<li>Updated to VideoJS 1.1.2</li>
+<li>Fixed the default plugin folder name.</li>
+<li>Fixed an issue with autoplay not working correctly.</li>
+</ul>
+
+<p>= 1.0.1 =</p>
+
+<ul>
+<li>Updated to latest version of VideoJS</li>
+</ul>
+
+<p>= 1.0 =</p>
+
+<ul>
+<li>First release.</li>
+</ul>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/stopspazzing/video-js-for-wordpress/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/stopspazzing/video-js-for-wordpress/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/stopspazzing/video-js-for-wordpress"></a> is maintained by <a href="https://github.com/stopspazzing">stopspazzing</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
