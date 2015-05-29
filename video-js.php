@@ -217,12 +217,12 @@ function video_shortcode($atts, $content=null){
     //Watermark
     if($watermark){
         $dataSetup['plugins'] = array(
-            ['watermark'] => array(
-                    ['file'] => $watermark,
-                    ['xpos'] => $wmxpos,
-                    ['ypos'] => $wmxpos,
-                    ['xrepeat'] => $wmxrepeat,
-                    ['opacity'] => $wmopacity
+            'watermark' => array(
+                    'file' => $watermark,
+                    'xpos' => $wmxpos,
+                    'ypos' => $wmxpos,
+                    'xrepeat' => $wmxrepeat,
+                    'opacity' => $wmopacity
             )
         );
     }
