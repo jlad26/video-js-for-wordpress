@@ -985,10 +985,6 @@ body.vjs-full-window {
 .vjs-no-js a:visited {
   color: #F4A460;
 }
-/*Make responsive container actually responsive*/
-.video-js-responsive-container {
-  margin: auto;
-}
 /* -----------------------------------------------------------------------------
 The original source of this file lives at
 https://github.com/videojs/video.js/blob/master/src/css/video-js.less */
